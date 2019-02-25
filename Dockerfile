@@ -9,8 +9,6 @@ RUN apt-get install -y  asterisk asterisk-mysql sudo
 RUN apt-get install -y coreutils procps
 RUN apt-get install -y iaxmodem hylafax-server
 
-ADD asterisk_configs.tar.gz 
-
 RUN touch /etc/hylafax/config
 
 RUN echo '#!/bin/bash\n\
